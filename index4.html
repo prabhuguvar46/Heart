@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVM Model for Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left; 
+        }
+        code {
+            background-color: #f9f9f9;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1>SVM Model for Heart Disease Prediction</h1>
+    </center>
+        <h2>1. SVM Overview</h2>
+        <ul>
+            <li><strong>Hyperplane Separation:</strong> SVM finds an optimal hyperplane that separates data points for classification.</li>
+            <li><strong>Application:</strong> In heart disease prediction, SVM classifies ECG signals into healthy or disease categories.</li>
+        </ul>
+
+        <h2>2. Input Features (ECG Images)</h2>
+        <p>The ECG images need preprocessing to extract meaningful features such as:</p>
+        <ul>
+            <li><strong>Heart Rate:</strong> The number of beats per minute.</li>
+            <li><strong>QRS Complex:</strong> Represents the ventricular depolarization.</li>
+            <li><strong>Wave Intervals:</strong> Measure intervals between key waves (P, QRS, T).</li>
+        </ul>
+
+        <h2>3. Kernel Trick</h2>
+        <p>SVM uses kernel functions to map non-linearly separable data into higher dimensions. Common kernel choices for ECG data include:</p>
+        <ul>
+            <li><strong>Linear Kernel:</strong> For linearly separable data.</li>
+            <li><strong>RBF (Radial Basis Function) Kernel:</strong> Handles non-linear data effectively.</li>
+        </ul>
+
+        <h2>4. Training Process</h2>
+        <ul>
+            <li><strong>Training:</strong> The model is trained using labeled ECG data to distinguish between healthy and diseased patients.</li>
+            <li><strong>Objective:</strong> Minimize misclassification by adjusting the position of the hyperplane.</li>
+        </ul>
+
+        <h2>5. Advantages for ECG</h2>
+        <ul>
+            <li><strong>Small Dataset:</strong> SVM performs well even with smaller datasets.</li>
+            <li><strong>High Dimensionality:</strong> Handles high-dimensional data such as ECG features effectively.</li>
+            <li><strong>Outliers:</strong> SVM is robust to noisy data and outliers.</li>
+        </ul>
+
+        <h2>6. Evaluation Metrics</h2>
+        <p>The model's performance can be evaluated using:</p>
+        <ul>
+            <li><strong>Accuracy:</strong> The percentage of correct predictions made by the model.</li>
+            <li><strong>Precision and Recall:</strong> Useful for handling imbalanced data, where one class dominates the dataset.</li>
+            <li><strong>Confusion Matrix:</strong> Provides a summary of prediction performance, showing true positives, false positives, etc.</li>
+        </ul>
+
+        <h2>7. Deployment</h2>
+        <p>The trained SVM model can be deployed in a web application where users upload ECG images for heart disease prediction. It can be served using frameworks like Flask or Django.</p>
+    </div>
+</body>
+</html>

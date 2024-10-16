@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #161414;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1>About</h1></center>
+        
+        <h2>Objective</h2>
+        <p>
+            This project aims to develop a web-based application that predicts the likelihood of heart disease in patients based on a combination of clinical data and medical imaging. The goal is to provide healthcare professionals with a tool that can assist in early diagnosis and treatment planning.
+        </p>
+        
+        <h2>Key Features</h2>
+        <p>
+            <span class="highlight">Image-Based Prediction:</span> The application includes a feature that allows users to upload medical images, such as ECG or echocardiograms, which are analyzed using a convolutional neural network (CNN) to predict the presence of heart disease.
+        </p>
+        <p>
+            <span class="highlight">Real-Time Results:</span> The system provides immediate feedback, displaying the probability of heart disease along with a confidence score.
+        </p>
+        <p>
+            <span class="highlight">Doctor Portfolio:</span> The application also includes a portfolio section where doctors can view patient predictions, track their diagnostic history, and add notes.
+        </p>
+        
+        <h2>Technical Stack</h2>
+        <p>
+            <span class="highlight">Frontend:</span> HTML, CSS, JavaScript (React.js) for building an intuitive and responsive user interface.
+        </p>
+        <p>
+            <span class="highlight">Backend:</span> Python with Flask/Django for handling data processing, model integration, and API development.
+        </p>
+        <p>
+            <span class="highlight">Machine Learning:</span> A combination of classical machine learning algorithms (like logistic regression, decision trees) and deep learning models (CNN) to analyze both tabular data and images.
+        </p>
+        
+        <h2>Challenges and Solutions</h2>
+        <p>
+            <span class="highlight">Data Imbalance:</span> The model was initially challenged by imbalanced data, where fewer instances of heart disease cases led to biased predictions. This was mitigated by applying techniques such as oversampling and SMOTE (Synthetic Minority Over-sampling Technique).
+        </p>
+        <p>
+            <span class="highlight">Model Accuracy:</span> Continuous model optimization was performed, including hyperparameter tuning and feature selection, to enhance the accuracy of predictions.
+        </p>
+        <p>
+            <span class="highlight">Real-Time Image Analysis:</span> Implementing a CNN model for real-time image analysis required extensive training on large datasets and optimization for fast inference times.
+        </p>
+        
+        <h2>Outcome</h2>
+        <p>
+            The heart disease prediction application is designed to serve as a supportive diagnostic tool, enhancing the decision-making process for healthcare professionals. The project demonstrates a strong integration of AI and machine learning in the healthcare domain, offering valuable insights into both clinical and imaging data.
+        </p>
+    </div>
+</body>
+</html>

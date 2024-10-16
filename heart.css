@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    width: auto;
+    margin-top: 50px;
+    margin-left: center;
+    background: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+
+.container {
+    background:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:350px;
+    backdrop-filter: blur(8px);
+    box-shadow: 5px,5px,10px black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+    
+}
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(118, 118, 225);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size:medium;
+}
+
+button:hover {
+    background-color: rgb(118, 118, 225);
+}

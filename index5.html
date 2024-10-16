@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XGBoost for Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left; 
+        }
+        code {
+            background-color: #f9f9f9;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1>XGBoost Model for Heart Disease Prediction</h1>
+    </center>
+        <h2>1. Overview of XGBoost</h2>
+        <ul>
+            <li><strong>Tree-based Algorithm:</strong> XGBoost builds an ensemble of decision trees, improving predictions iteratively.</li>
+            <li><strong>Use Case:</strong> XGBoost can be used for heart disease prediction by extracting features from ECG images.</li>
+        </ul>
+
+        <h2>2. Input Features</h2>
+        <p>ECG images are preprocessed to extract the following key features:</p>
+        <ul>
+            <li><strong>Heart Rate:</strong> Number of beats per minute.</li>
+            <li><strong>QRS Complex:</strong> Measures ventricular depolarization.</li>
+            <li><strong>Wave Intervals:</strong> P, QRS, and T wave intervals.</li>
+        </ul>
+
+        <h2>3. Boosting Technique</h2>
+        <ul>
+            <li><strong>Gradient Boosting:</strong> XGBoost uses gradient boosting to iteratively correct errors from previous trees.</li>
+            <li><strong>Objective:</strong> To minimize prediction errors and produce highly accurate results.</li>
+        </ul>
+
+        <h2>4. Model Advantages</h2>
+        <p>XGBoost offers several advantages in the context of heart disease prediction:</p>
+        <ul>
+            <li><strong>Speed and Performance:</strong> Optimized for fast execution and scalability.</li>
+            <li><strong>Handling Missing Data:</strong> XGBoost can handle missing values automatically.</li>
+            <li><strong>Regularization:</strong> L1 and L2 regularization to prevent overfitting, which is important in medical data.</li>
+        </ul>
+
+        <h2>5. Model Tuning</h2>
+        <p>Key hyperparameters that can be adjusted to improve performance include:</p>
+        <ul>
+            <li><strong>Learning Rate:</strong> Determines the contribution of each tree to the final model.</li>
+            <li><strong>Max Depth:</strong> Controls the depth of each decision tree, balancing accuracy and complexity.</li>
+            <li><strong>Number of Trees:</strong> Defines how many trees the model uses.</li>
+        </ul>
+
+        <h2>6. Evaluation Metrics</h2>
+        <p>The performance of the XGBoost model is evaluated using:</p>
+        <ul>
+            <li><strong>Accuracy:</strong> Proportion of correctly predicted instances.</li>
+            <li><strong>Precision and Recall:</strong> Key for imbalanced datasets.</li>
+            <li><strong>F1 Score:</strong> Combines precision and recall into a single metric.</li>
+        </ul>
+
+        <h2>7. Deployment</h2>
+        <p>The trained XGBoost model can be deployed in a web application where users upload ECG features for heart disease prediction. Frameworks like Flask or Django can be used for deployment.</p>
+  
+    </div>
+</body>
+</html>

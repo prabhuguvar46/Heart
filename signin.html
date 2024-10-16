@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Signin</title>
+        <style>
+          body{
+                background: url("login.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                
+            }
+            div{
+                border: 1px solid ;
+                box-shadow: 0px,0px,8px black;
+                width: 50vh;
+                height: 50vh;
+                border-radius: 3px;
+                backdrop-filter: blur(8px);
+                border: 100%;
+            }
+            label{
+                color:black;
+               margin-left: 30px;
+               font-weight: bold;
+               font-size: 15px;
+
+            }
+            input{
+                margin-top: 10px;
+                padding: 3px;
+                border-radius: 8px;
+                background:transparent;
+            }
+            input::placeholder{
+                color:black;
+                font-size: 10px;
+                align-items: center;
+            }
+            h2{
+                color:black;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+            button{
+                padding: 7px;
+                background-color: rgb(118, 118, 225);
+                color: black;
+                border-radius: 8px;
+                cursor: pointer;
+                width: 100px;
+            }
+            a{
+                color: blue;
+                margin-left: 5px;
+            }
+        
+        </style>
+    </head>
+    <body><form action="signup.html">
+        <center>
+            <div>
+                <h2>SignIn</h2>
+                <tr>
+                    <td><label>FullName: </label required></td>
+                </tr>
+                 <tr>
+                    <td><input type="text" id="fl" placeholder="Enter fullname" required><br><br></td>
+                 </tr>
+                 <tr>
+                    <td><label for="">UserName:</label required></td>
+                 </tr>
+                <tr>
+                    <td><input type="text" id="unn" placeholder="Enter sername" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="passs" placeholder="Enter password" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label>Conform Password:</label required></td>
+                </tr>
+                 <tr>
+                    <td><input type="password" id="cpass" placeholder="Enter password again" required><br><br></td>
+                 </tr>
+               <tr>
+                <td> <button onclick="alert('Signin Successfull.')">Signin</button><br><br></td>
+               </tr>
+               <tr>
+                <td> <label>Already have an account</label><a href="login.html">Login</a></td>
+               </tr>
+            </div>
+        </center>
+    </form>
+    </body>
+</html>
